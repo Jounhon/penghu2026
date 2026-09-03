@@ -30,7 +30,7 @@
         }
     </script>
     <!-- FontAwesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-fontawesome/6.4.0/css/all.min.css">
     <style>
         body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
@@ -72,8 +72,8 @@
     <!-- Main Content Container -->
     <main class="max-w-4xl mx-auto px-4 mt-6">
 
-        <!-- Dynamic Map Frame -->
-        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-2 mb-6 sticky top-2 z-20">
+        <!-- Dynamic Map Frame (Non-sticky) -->
+        <div class="bg-white rounded-2xl shadow-sm border border-slate-100 p-2 mb-6">
             <div class="flex justify-between items-center px-3 py-2">
                 <span id="map-title" class="text-xs font-semibold text-ocean-800"><i class="fa-solid fa-map-pin mr-1"></i>景點導航地圖：澎湖縣</span>
                 <span class="text-[10px] text-slate-400">點擊行程文字/清單可切換地圖</span>
@@ -215,7 +215,7 @@
                     </li>
                     <li class="flex items-start">
                         <span class="w-12 font-semibold text-ocean-500 shrink-0">14:30</span>
-                        <div>買 <span class="interactive-link" onclick="updateMapByUrl('大池炸粿&鯊魚排', 'https://maps.app.goo.gl/v7VfjYJLLoCuNJCT8')">大池鯊魚排</span> ➜ 閒晃：<span class="interactive-link" onclick="updateMapByUrl('二崁杏仁茶', 'https://maps.app.goo.gl/EmNWFzj7FuQKRoFj9')">二崁</span>、<span class="interactive-link" onclick="updateMapByUrl('池西岩瀑', 'https://maps.app.goo.gl/7rp6rQYMTgBQYopc9')">池西</span>、<span class="interactive-link" onclick="updateMapByUrl('池東大菓葉玄武岩', 'https://maps.app.goo.gl/mjUPWwD6LtpnKEtf6')">池東</span>、外垵漁港、<span class="interactive-link" onclick="updateMapByUrl('西嶼東臺', 'https://maps.app.goo.gl/CTXahQEevbL6zBkP8')">西嶼東臺</span></div>
+                        <div>買 <span class="interactive-link" onclick="updateMapByUrl('大池炸粿&鯊魚排', 'https://maps.app.goo.gl/v7VfjYJLLoCuNJCT8')">大池鯊魚排</span> ➜ 閒晃：<span class="interactive-link" onclick="updateMapByUrl('二崁杏仁茶', 'https://maps.app.goo.gl/EmNWFzj7FuQKRoFj9')">二崁</span>、<span class="interactive-link" onclick="updateMapByUrl('池西岩瀑', 'https://maps.app.goo.gl/7rp6rQYMTgBQYopc9')">池西</span>、<span class="interactive-link" onclick="updateMapByUrl('池東大菓葉玄武岩', 'https://maps.app.goo.gl/mjUPWwD6LtpnKEtf6')">池東</span>、<span class="interactive-link" onclick="updateMapByUrl('內垵南漁港', 'https://maps.app.goo.gl/qHRJqdq2DCucPbsR6')">內垵南漁港</span>、<span class="interactive-link" onclick="updateMapByUrl('西嶼東臺', 'https://maps.app.goo.gl/CTXahQEevbL6zBkP8')">西嶼東臺</span></div>
                     </li>
                     <li class="flex items-start">
                         <span class="w-12 font-semibold text-ocean-500 shrink-0">16:00</span>
@@ -494,6 +494,7 @@
             { name: "池西岩瀑 (九孔瀑布)", tag: "玄武岩景觀", url: "https://maps.app.goo.gl/7rp6rQYMTgBQYopc9" },
             { name: "小池角雙曲橋", tag: "海中長橋", url: "https://maps.app.goo.gl/zhEQcEfeHhf6BgKe9" },
             { name: "池東大菓葉玄武岩", tag: "壯麗柱狀玄武岩", url: "https://maps.app.goo.gl/mjUPWwD6LtpnKEtf6" },
+            { name: "內垵南漁港 彩色消波塊", tag: "彩色消波塊", url: "https://maps.app.goo.gl/qHRJqdq2DCucPbsR6" },
             { name: "西嶼東臺", tag: "古蹟巡禮", url: "https://maps.app.goo.gl/CTXahQEevbL6zBkP8" },
             { name: "外垵草原", tag: "台版直布羅陀/夕陽", url: "https://maps.app.goo.gl/fDcNet3kUMyBqJnH8" },
             { name: "澎湖第三漁港國際廣場", tag: "夜間探險", url: "https://maps.app.goo.gl/j6BPZGFAbrTvHoGDA" }
