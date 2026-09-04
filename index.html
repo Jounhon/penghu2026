@@ -265,7 +265,10 @@
             <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mb-2">市區美食</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="food-city"></div>
             
-            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mt-6 mb-2">北島與其他美食</h3>
+            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mt-6 mb-2">南環美食</h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="food-south"></div>
+
+            <h3 class="text-sm font-semibold text-slate-400 uppercase tracking-wider mt-6 mb-2">北環美食</h3>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-3" id="food-north"></div>
         </section>
 
@@ -462,13 +465,19 @@
             { name: "益豐豆漿", time: "05:30 - 11:00", item: "燒餅油條+蔥蛋、無糖豆漿", url: "https://maps.app.goo.gl/3r7a34G5dwv95uxY8" },
             { name: "北新橋牛雜湯", time: "05:40 - 11:30", item: "牛雜湯", url: "https://maps.app.goo.gl/h584S1yR7AJAhpH69" },
             { name: "二信飯糰", time: "05:00 - 12:00", item: "小雙色飯糰+無糖豆漿", url: "https://maps.app.goo.gl/3aKqadg4HDT1uUTC9" },
+            { name: "香亭土魠魚羹", time: "05:30 - 13:00", item: "土魠魚羹", url: "https://maps.app.goo.gl/huF9nk5aJyhGBV3G8" },
+            { name: "乾益堂藥膳蛋", time: "09:00 - 17:30", item: "藥膳蛋、豆乾", url: "https://maps.app.goo.gl/k3mtfdL8PHbo2Dxa6" },
             { name: "蔬脆蛋餅", time: "12:30 - 18:00", item: "葷蔬脆蛋餅", url: "https://maps.app.goo.gl/yrn1aAYrSrEo6s5NA" },
             { name: "郵局口蔥油餅", time: "14:00 - 18:30", item: "蔥油餅雙蛋", url: "https://maps.app.goo.gl/yRujz53Kz2ta7Xbt6" },
-            { name: "山水牛肉麵", time: "11:00-14:00, 17:30-20:00", item: "牛三寶麵", url: "https://maps.app.goo.gl/kXzvaNXYmGoD4h9e7" },
+            { name: "三哥酒釀雞排", time: "14:30 - 20:00", item: "酒釀雞排、雞肉串", url: "https://maps.app.goo.gl/WQQ8dmGyPTMzJL5v6" },
             { name: "馬路益燒肉飯", time: "11:00-14:15, 16:30-21:15", item: "燒肉併花枝排飯、鮮蚵湯", url: "https://maps.app.goo.gl/SPe1fkmvssq8NQrn8" },
             { name: "阿華漁村海鮮料理", time: "17:00 - 22:00", item: "海鮮料理 / 無菜單", url: "https://maps.app.goo.gl/SP6CEc1xcTBbwgcC8" },
             { name: "玉冠嫩仙草", time: "10:00 - 22:00", item: "綜合嫩仙草凍", url: "https://maps.app.goo.gl/GBFeSHefeS2aNMHN9" },
             { name: "紫玉仙草", time: "12:30 - 18:30 (五六)", item: "八仙冰", url: "https://maps.app.goo.gl/V59J9oEXxAzvqMmc7" }
+        ];
+
+        const foodSouth = [
+            { name: "山水牛肉麵", time: "11:00-14:00, 17:30-20:00", item: "牛三寶麵", url: "https://maps.app.goo.gl/kXzvaNXYmGoD4h9e7" }
         ];
 
         const foodNorth = [
@@ -535,6 +544,7 @@
         window.onload = () => {
             fetchWeather();
             renderCards(foodCity, 'food-city');
+            renderCards(foodSouth, 'food-south');
             renderCards(foodNorth, 'food-north');
             renderCards(beaches, 'beach-list');
             renderCards(spots, 'spot-list');
